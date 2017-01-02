@@ -16,6 +16,11 @@ build:
     - cython = Cython.Compiler.Main:setuptools_main
     - cythonize = Cython.Build.Cythonize:main
     - cygdb = Cython.Debugger.Cygdb:main
+  features:
+    - pydebug
+  track_features:
+    - pydebug
+  skip: True # [not linux or not py27]
 
 requirements:
   build:
